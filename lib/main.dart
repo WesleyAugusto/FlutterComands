@@ -7,21 +7,17 @@ void main() {
       title: "Frases do dia ",
       home: Container(
         //color: Colors.white, //cor de  fundo
-        padding: EdgeInsets.fromLTRB(40, 40, 20, 20),
-        margin: EdgeInsets.all(45),
+         margin: EdgeInsets.only(top: 40),
         decoration: BoxDecoration(
-          border: Border.all(width: 80,color: Colors.black)
+          border: Border.all(width: 20,color: Colors.black)
         ),
-        child: Column(children: <Widget>[
-          Text("t1"),
-          Padding(padding: EdgeInsets.all(30)),
-          Text("t1"),
-
-         /*Text(
-             "texto da aula do professor testando o fundo e que a ldado nao tem limite ",
-                 textAlign: TextAlign.justify
-         )*/
-        ],)
-          )
-      ));
+        child: Column // row//colum
+          (children: <Widget>[
+          Text("T1"),
+          Text("T2"),
+          Text("T3")
+        ] ,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,//// row//colum/ sao diferentes
+        crossAxisAlignment: CrossAxisAlignment.center,
+      )),));
 }
