@@ -11,13 +11,6 @@ void main() {
         decoration: BoxDecoration(
           border: Border.all(width: 20,color: Colors.black)
         ),
-        child: Column // row//colum
-          (children: <Widget>[
-          Text("T1"),
-          Text("T2"),
-          Text("T3")
-        ] ,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,//// row//colum/ sao diferentes
-        crossAxisAlignment: CrossAxisAlignment.center,
-      )),));
+        child: Image.asset("images/mesa.jpg")
+),));
 }
